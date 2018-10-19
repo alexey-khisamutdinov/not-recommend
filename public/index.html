@@ -3,26 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Home Page</title>
+        <link rel="stylesheet" href="draftcss.css">
     </head>
     <body>
-       <header></header> 
-       <nav>
-           <ul>
-               <li><img src="">Logo</li>
-               <li><a href="#">Write a Review</a></li>
-               <li><a href="#">Sign Up</a></li>
-               <li><a href="#">Log In</a></li>
-           </ul>
-       </nav>
-       <main>
-            <form action="/">
-                <div>
-                  <label for="findinput">Find a buisness:</label>
-                  <input type="text" id="findinput" name="name">
-                  <input type="submit" value="Search">
-                </div>
-            </form>
-            <article>Content after Search button was activated</article> 
-       </main>
-       <footer>This site is created by Yulia Khisamutdinova and Alexey Khisamutdinov</footer>
+        <div class="page-content">
+            <header class="sticky-header">
+                <nav>
+                    
+                    <div id="review-button"><a href="#" class="button-style">Write a Review</a></div>
+                    <div id="login-button"><a href="#" class="button-style">Sign Up</a>
+                    <a href="#" class="button-style">Log In</a></div>
+                </nav>
+            </header>
+            <main>
+                <h1 class="logo"><img src="img/drop.png"><span>CLEAR</span></h1>
+                <form action="/">
+                    <div>
+                    <label for="findinput">Find a buisness:</label>
+                    <input type="text" id="findinput" name="find" placeholder="What">
+                    <input type="text" name="location" placeholder="Where">
+                    <input type="submit" value="Search" class="button-style">
+                    </div>
+                </form>
+                <article>Content after Search button was activated</article> 
+            </main>
+       </div>
+       <footer><p>This site is created by Yulia Khisamutdinova and Alexey Khisamutdinov</p></footer>
     </body>
