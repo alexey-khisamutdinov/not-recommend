@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
 //import fire from './fire'
 
 class App extends Component {
@@ -27,17 +28,7 @@ class App extends Component {
     return (
       <div id="body">
         <div className="page-content">
-            <header>
-                <nav>
-                    <div id="review-button">
-                        <a href="#" className="button-style">Write a Review</a>
-                    </div>
-                    <div id="login-button">
-                        <a href="#" className="button-style">Sign Up</a>
-                        <a href="#" className="button-style">Log In</a>
-                    </div>
-                </nav>
-            </header>
+            <Navbar/>
             <main>
                 <h1 className="logo"><img src={"img/drop.png"}/><span>CLEAR</span></h1>
                 <form action="/">
@@ -57,5 +48,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
