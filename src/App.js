@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
+import Search from './Search';
 //import fire from './fire'
 
 class App extends Component {
@@ -31,18 +33,11 @@ class App extends Component {
             <Navbar/>
             <main>
                 <h1 className="logo"><img src={"img/drop.png"}/><span>CLEAR</span></h1>
-                <form action="/">
-                    <div>
-                    <label for="findinput">Find a buisness:</label>
-                    <input type="text" id="findinput" name="find" placeholder="What"/>
-                    <input type="text" name="location" placeholder="Where"/>
-                    <input type="submit" value="Search"/>
-                    </div>
-                </form>
+                <Search />
                 <article>Content after Search button was activated</article> 
             </main>
         </div>
-            <footer><p>This site was created by Yulia Khisamutdinova and Alexey Khisamutdinov</p></footer>  
+        <Footer />
       </div>
       
     );

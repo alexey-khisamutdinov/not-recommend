@@ -1,4 +1,7 @@
-#body {
+body {
+  height: 100%;
+}
+#root, #body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   height: 100%;
@@ -88,10 +91,12 @@ article {
   content: "";
   display: block;
 }
+footer, .page-content::after {
+  height: 50px;
+}
 
-div footer {
+footer {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
-  height: 50px;
 }
